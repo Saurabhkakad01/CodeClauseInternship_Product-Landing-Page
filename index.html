@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SK Fitness</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div style="background-image: url(back1.jpg)">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"
+            ><h1 class="A"><u>SK Fitness</u></h1></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- intro section-->
+      <section id="home" class="hero">
+        <div class="container">
+          <h1>Welcome to SK fitness</h1>
+          <p>Your path to a healthier lifestyle starts here.</p>
+          <b
+            ><p class="deal text-center">
+              The deal ends in <span id="demo"></span></p
+          ></b>
+          <a href="#features" class="cta-button">Learn More</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- features section -->
+    <section id="features" class="features-section">
+      <div class="feature">
+        <img src="icon1.png" alt="Feature 1" />
+        <h2>State-of-the-Art Equipment</h2>
+        <p>We provide top-notch gym equipment for all your fitness needs.</p>
+      </div>
+
+      <div class="feature">
+        <img src="icon2.jpg" alt="Feature 2" />
+        <h2>Professional Trainers</h2>
+        <p>
+          Our experienced trainers are dedicated to helping you achieve your
+          fitness goals.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img src="icon3.jpg" alt="Feature 3" />
+        <h2>Group Classes</h2>
+        <p>
+          Join our group classes for a fun and motivating workout experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+
+    <section
+      id="pricing"
+      class="pricing-A"
+      style="background-image: url(pricingback.jpg)"
+    >
+      <div id="pricing-container">
+        <div
+          class="pricing-plan"
+          id="basic-plan"
+          onclick="selectPlan('basic-plan')"
+        >
+          <h2>Basic Plan</h2>
+          <p>Access to basic gym facilities</p>
+          <h3><b>500₹/1month</b></h3>
+          <a href="mailto:info@SKfitness.com" class="cta-button">Get Start</a>
+        </div>
+        <div
+          class="pricing-plan"
+          id="standard-plan"
+          onclick="selectPlan('standard-plan')"
+        >
+          <h2>Standard Plan</h2>
+          <p>Access to basic and advanced gym facilities</p>
+          <h3><b>1300₹/3month</b></h3>
+          <a href="mailto:info@SKfitness.com" class="cta-button">Get Start</a>
+        </div>
+        <div
+          class="pricing-plan"
+          id="premium-plan"
+          onclick="selectPlan('premium-plan')"
+        >
+          <h2>Premium Plan</h2>
+          <p>Access to all gym facilities + personal trainer</p>
+          <h3><b>2500₹/6month</b></h3>
+          <a href="mailto:info@SKfitness.com" class="cta-button">Get Start</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+      <div class="contact-container" class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <br />
+          <button type="button" onclick="validateForm()"><b>Submit</b></button>
+        </form>
+        <div id="successMessage"></div>
+        <h2>Any questions? Reach out to us!</h2>
+        <a href="mailto:info@SKfitness.com" class="cta-button">Contact Now</a>
+      </div>
+    </section>
+
+    <!-- Footer section-->
+    <footer>Copyright &copy; SKfitness.com | All rights reserved</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
